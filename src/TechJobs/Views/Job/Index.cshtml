@@ -1,9 +1,23 @@
 ﻿@{
 // TODO #2.1- declare the ViewModel (outside of this @{ } block)
+// done?
 }
+
+@model TechJobs.Models.JobFieldType
 
 <table class="job-listing">
     @{ 
 // TODO #2.2 - display the job fields, one per row (outside of this @{ } block)
     }
+    @foreach (var job in Model)
+    {
+        <tr>
+            <td>@job.Employer</td>
+            <td>@job.</td>
+            <td>@job.</td>
+            <td>@job.</td>
+        </tr>
+
+    }
+
 </table>
